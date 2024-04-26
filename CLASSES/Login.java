@@ -59,7 +59,7 @@ f.add(signin);
      //f.add(front);
      ImageIcon welcome = new ImageIcon("tt.gif");
       L1 = new JLabel(welcome);
-      L1.setBounds(263, 18, 588,74);
+      L1.setBounds(263, 50, 588,74);
       f.add(L1);
     panel.add(email1); //panel.add(b2);  
      f.add(email);
