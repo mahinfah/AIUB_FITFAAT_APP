@@ -7,7 +7,9 @@ import javax.swing.*;
 public class Login{  
 
   JFrame f;
-    JLabel L1,email1,pass1,pic;
+  JButton login,signin,adminsignin;
+  
+    JLabel L1,email1,pass1,pic,wel;
     JTextField email ;
     JPasswordField pass;
     JPanel panel;
@@ -16,14 +18,26 @@ public class Login{
          f= new JFrame("Panel Example");    
          panel=new JPanel();  
              email = new JTextField();
-         email1 = new JLabel("    EMAIL :");
+  ImageIcon loginpic = new ImageIcon("login.png");
+  login = new JButton(loginpic);
+  login.setBounds(430,335,70,27);
+  f.add(login);
+ImageIcon wel1 = new ImageIcon("messagif (3).gif");
+    wel = new JLabel(wel1);
+	wel.setBounds(0,1,340,180);
+	f.add(wel);
+  ImageIcon signinpic = new ImageIcon("signin.png");
+  signin = new JButton(signinpic);
+signin.setBounds(550,335,70,29);
+f.add(signin);
+  email1 = new JLabel("    EMAIL :");
          pass1 = new JLabel( " PASSWORD :");
          pass = new JPasswordField();
          pass1. setBounds(420,200,104,94);
-         pass.setBounds(510,230,100,35);
+         pass.setBounds(510,230,150,35);
          email1.setBounds(420,155,200,40);
          email1.setBackground(Color.black);
-         email.setBounds(510,155,100,35);
+         email.setBounds(510,155,150,35);
         f.getContentPane().setBackground(Color.black);
        // f.setBackground(Color.blue);
        ImageIcon front  = new ImageIcon("boyjogging.gif");
@@ -51,7 +65,7 @@ public class Login{
      f.add(email);
         f.add(email1); 
           f.add(panel);  
-                f.setSize(750,592);    
+                f.setSize(740,585);    
                 f.setLayout(null);    
                 f.setVisible(true);    
         }  
