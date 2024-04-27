@@ -1,15 +1,13 @@
 import java.lang.*;
-import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
-import java.awt.*;  
+import java.awt.event.*;  
 import javax.swing.*;  
-public class Login{  
+public class Login{
 
   JFrame frame;
   JButton login,signin,adminsignin;
   
-    JLabel L1,email1,pass1,pic,wel;
+    JLabel L1,email_label,pass1,pic,wel;
     JTextField email ;
     JPasswordField pass;
     JPanel panel;
@@ -30,15 +28,15 @@ ImageIcon wel1 = new ImageIcon("messagif (3).gif");
   signin = new JButton(signinpic);
 signin.setBounds(550,335,70,29);
 frame.add(signin);
-  email1 = new JLabel("    EMAIL :");
+  email_label = new JLabel("    EMAIL :");
          pass1 = new JLabel( " PASSWORD :");
          pass = new JPasswordField();
          pass1. setBounds(420,200,104,94);
          pass.setBounds(510,230,150,35);
-         email1.setBounds(420,155,200,40);
-         email1.setBackground(Color.black);
+         email_label.setBounds(420,155,200,40);
+         email_label.setBackground(Color.black);
          email.setBounds(510,155,150,35);
-        frame.getContentPane().setBackground(Color.black);
+         frame.getContentPane().setBackground(Color.black);
        // f.setBackground(Color.blue);
        ImageIcon front  = new ImageIcon("boyjogging.gif");
          pic = new JLabel(front);
@@ -61,13 +59,13 @@ frame.add(signin);
       L1 = new JLabel(welcome);
       L1.setBounds(263, 50, 588,74);
       frame.add(L1);
-    panel.add(email1); //panel.add(b2);  
-     frame.add(email);
-        frame.add(email1); 
-          frame.add(panel);  
-                frame.setSize(740,585);    
-                frame.setLayout(null);    
-                frame.setVisible(true);    
+      panel.add(email_label); //panel.add(b2);  
+      frame.add(email);
+      frame.add(email_label); 
+      frame.add(panel);  
+      frame.setSize(740,585);    
+      frame.setLayout(null);    
+      frame.setVisible(true);    
         }  
         public static void main(String args[])  
         {  
